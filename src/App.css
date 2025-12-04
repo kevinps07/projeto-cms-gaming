@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@theme {  
+  --color-mint-500: oklch(0.72 0.11 178);
+  --color-midnight: #070B31;
+  --color-LuckyPoint: #1d1150;
+  --color-neoncyan:#00FFFF;
+  --color-neonpink: #FF008A;
+  --color-SilverSand:#b9bdc2;
+  --color-CuriousBlue:#17abe2;
+  --color-Shakespeare:#50bfcc;
+  --color-GovernorBay: #3447b6;
+  --color-MediumPurple: #a863e8;
+  --color-RoyalPurple: #7f42eb; 
+  --border-angle:0deg;
+
+  @keyframes shine {
+    to{
+      --angle:360deg;
+    };
+  };
+};
+
+.shine {
+  background: conic-gradient(from var(--angle),  #ff00c7ff 1%, #009affff 100%);
+  animation: shine 5s linear infinite reverse;
+}
