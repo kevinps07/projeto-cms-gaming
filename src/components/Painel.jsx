@@ -1,12 +1,9 @@
-function Card ({className, children}){
-
-    return (
+function Painel ({className, children}){
+    return(
         <div className={className}>
             {children}
         </div>
     );
-    
 }
 
-
-export default Card;
+export default Painel;
