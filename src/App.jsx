@@ -4,15 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from './components/Nav'
 import List from './components/List'
-import AdminLayout from './components/AdminLayout'
+import AdminLayout from './components/layout/AdminLayout'
 
 function App(){
 
-  return (
-      <div className='bg-midnight text-white w-screen h-screen'>
-            <AdminLayout />
-      </div>
-  )
+  return <AdminLayout />
+
 }
 
 export default App;

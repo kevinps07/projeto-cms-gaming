@@ -1,7 +1,8 @@
-function List({as='ul', className, children}){
+function List({as='ul', direction='h', children, className=''}) {
+  const dir = direction === 'h'? 'flex ': 'flex flex-col '
   const ListTag = as === 'ol'? 'ol':'ul';
   return (
-    <ListTag className={className}>
+    <ListTag className={dir + className}>
         {children}
     </ListTag>
   );
